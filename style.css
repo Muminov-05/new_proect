@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, rgb(10, 10, 177), rgb(200, 50, 50));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login {
+  width: 45%;
+  height: 450px;
+  background: linear-gradient(to right, rgb(9, 9, 83), rgb(200, 50, 50));
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+
+form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar i {
+  font-size: 100px;
+  line-height: 1;
+  color: #073477;
+}
+
+.inputBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+  padding: 10px 20px;
+}
+
+.inputBox input {
+  width: 70%;
+  height: 35px;
+  font-size: 13px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: rgb(44, 42, 42);
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.inputBox input:active,
+.inputBox input:focus {
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(136, 135, 138);
+}
+
+input:hover::placeholder {
+  color: rgb(73, 72, 72);
+}
+
+.links {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: white;
+  padding: 10px 20px;
+}
+
+.login input[type="submit"] {
+  width: 65%;
+  height: 35px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  background: linear-gradient(to right, rgb(5, 5, 241), rgb(245, 12, 12));
+  transition: 0.3s ease-in-out;
+  margin-top: 15px;
+}
+.login input[type="submit"]:hover {
+  background: linear-gradient(to right, rgb(2, 2, 139), rgb(200, 0, 0));
+}
+.login input[type="submit"]:active {
+  transform: scale(1.015);
+}
+
+
+.login {
+    background: url("https://picsum.photos/600/800") center/120% no-repeat;
+    animation: bgMove 20s infinite alternate linear;
+}
+
+@keyframes bgMove {
+    from { background-position: left ; }
+    to { background-position: right ; }
+}
+
+body{
+    background: url("https://picsum.photos/1200/800") center/cover no-repeat fixed;
+    animation: bgMoveBody 30s infinite alternate linear;
+}
+
+@keyframes bgMoveBody {
+    from { background-position: center top; }
+    to { background-position: center bottom; }
+}
+
+.password-wrapper {
+    position: relative;
+    width: 70%;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding-right: 40px; /* место для глазка */
+}
+
+.password-wrapper i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #073477;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
