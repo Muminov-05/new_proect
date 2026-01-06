@@ -155,3 +155,37 @@ body{
 }
 
 
+@media (max-width: 600px) {
+  .login {
+    width: 85%;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .avatar i {
+    font-size: 80px;
+  }
+
+  .inputBox .username {
+    width: 100%;
+  }
+
+  .inputBox .password-wrapper input {
+    width: 100%;
+  }
+
+  .links {
+    width: 70%;
+    font-size: 12px;
+  }
+
+  .login input[type="submit"] {
+    width: 60%;
+    margin-bottom: 15px;
+  }
+}
